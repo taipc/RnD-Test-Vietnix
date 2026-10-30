@@ -1,7 +1,5 @@
 # Bài Test Kỹ Thuật: R&D Engineer (Infrastructure & Automation) - Vietnix
 
-**Ứng viên:** Phùng Chí Tài
-
 Repository này chứa toàn bộ tài liệu và mã nguồn giải quyết bài test kỹ thuật cho vị trí R&D Engineer.
 
 ## 📁 Cấu trúc Repository
