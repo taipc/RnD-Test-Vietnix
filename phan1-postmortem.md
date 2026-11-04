@@ -31,7 +31,6 @@ Dẫn đến:
    - [20-Oct-2026 01:33:06] WARNING: [pool www] child 90311 said into stderr: "PHP Warning:  session_start(): open(/var/lib/php/sessions/sess_9f2c1d, O_RDWR) failed: No space left on device (28) in /home/site42/public_html/wp-includes/class-wp-session.php on line 112"
 
 ## 3. Nguyên nhân gốc rễ (Root Cause)
-**Phân
    - File cấu hình `/etc/logrotate.d/nginx` bị lỗi unknown option 'dailly', Lỗi chính tả này đã ngăn hệ thống dọn dẹp log của Nginx. Trình logrotate liên tục báo lỗi và bỏ qua việc cắt/nén các tệp log trong thư mục /var/log/nginx/ kể từ ngày 14/10. Hậu quả là các tệp log không ngừng phình to theo thời gian cho đến khi vắt kiệt hoàn toàn dung lượng ổ cứng (No space left on device) vào rạng sáng ngày 20/10.
    Có 5 thông tin đáng lưu ý:
    1. file log phình lên 37G (dòng số 10 trong file RnD-Test-Vietnix\phan1-su-co\snapshot\du-var.txt): 
